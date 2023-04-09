@@ -15,7 +15,6 @@ export default function Accounts() {
     if (address) {
       try {
         const balance = await alchemy.core.getBalance(address);
-        console.log(balance)
         setBalance(formatUnits(balance.toString(), "ether"));
       } catch (error) {
         console.log('Error fetching balance', error);

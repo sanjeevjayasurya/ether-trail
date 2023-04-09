@@ -3,57 +3,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { alchemy } from "../lib/alchemy";
 
-// export default function Home() {
-//   const [latestBlockNumber, setLatestBlockNumber] = useState(null);
-//   const [previousBlocks, setPreviousBlocks] = useState([]);
-
-//   useEffect(() => {
-//     const fetchLatestBlockNumber = async () => {
-//       const blockNumber = await alchemy.core.getBlockNumber();
-//       setLatestBlockNumber(blockNumber);
-//     };
-//     fetchLatestBlockNumber();
-//   }, []);
-
-//   useEffect(() => {
-//     const fetchPreviousBlocks = async () => {
-//       const blockNumber = await alchemy.core.getBlockNumber();
-//       const blocks = [];
-
-//       for (let i = blockNumber; i > blockNumber - 10; i--) {
-//         const block = await alchemy.core.getBlock(i);
-//         blocks.push(block);
-//       }
-
-//       setPreviousBlocks(blocks);
-//     };
-//     fetchPreviousBlocks();
-//   }, []);
-
-//   return (
-//     <div>
-//       <Head>
-//         <title>My Block Explorer</title>
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-
-//       <main>
-//         <h1 className="text-2xl font-bold">Latest Ethereum Block Number</h1>
-//         <p>{latestBlockNumber}</p>
-
-//         <h2 className="text-2xl font-bold">Previous Blocks</h2>
-//         <ul>
-//           {previousBlocks.map(block => (
-//             <li key={block.number}>
-//               Block Number: {block.number}, Transactions: {block.transactions.length}
-//             </li>
-//           ))}
-//         </ul>
-//       </main>
-//     </div>
-//   );
-// }
-
 export default function Home() {
   const [latestBlockNumber, setLatestBlockNumber] = useState(null);
   const [recentBlocks, setRecentBlocks] = useState([]);

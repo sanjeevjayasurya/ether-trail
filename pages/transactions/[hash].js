@@ -1,5 +1,4 @@
-import { BigNumber } from "alchemy-sdk";
-import { formatUnits, BigNumberish, ethers } from "ethers";
+import { formatUnits } from "ethers";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

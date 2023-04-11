@@ -6,7 +6,6 @@ import { alchemy } from "../../lib/alchemy";
 export default function BlockPage() {
   const router = useRouter();
   const { number } = router.query;
-  console.log(number);
   const [block, setBlock] = useState(null);
   const [transactions, setTransactions] = useState([]);
 

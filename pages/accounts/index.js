@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { ethers, formatUnits } from 'ethers';
+import { formatUnits } from 'ethers';
 import { alchemy } from '../../lib/alchemy';
 
 export default function Accounts() {
